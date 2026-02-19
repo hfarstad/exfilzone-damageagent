@@ -1,7 +1,7 @@
-# dmgagent.ps1 — Contractors Showdown raid damage monitor
-# Norwegian variables, English output
+# dmgagent.ps1 — Contractors Showdown raid damage monitor and logging
+# built iteratively with my powershell interest and too much free time,  releasing for the mass to enjoy and to show my potential employers. english/Norwegian variables, English output
 
-# === Paths — auto-configured, no editing needed ===
+# Paths — auto-configured, no editing needed
 if ($IsWindows) {
     $outputDir = Join-Path $env:USERPROFILE "Documents\DamageAgent"
 } else {
@@ -20,7 +20,7 @@ $mistenkeligFil = Join-Path $outputDir "suspicious-damage.log"
 $maks    = 80    # max realistic single hit — flag as "Possible mod" above this
 $modMaks = 150   # upper bound before flagging "Exploit suspected"
 
-# === Variable declarations ===
+# === Variables===
 $totalSkade        = 0
 $mikroSkadeTotal   = 0
 $vaapen            = "Unknown"
@@ -41,7 +41,7 @@ $raidMistLogg      = @()
 if (-not (Test-Path $overlayFil))     { New-Item -Path $overlayFil     -ItemType File -Force | Out-Null }
 if (-not (Test-Path $mistenkeligFil)) { New-Item -Path $mistenkeligFil -ItemType File -Force | Out-Null }
 
-# === Wait for log file to exist (in case game hasn't launched yet) ===
+# Wait for log file to exist (if the game is not running yet) - Just launch the damageagent before or after raiding
 while (-not (Test-Path $loggFil)) {
     Write-Host "Waiting for log file..." -ForegroundColor DarkGray
     Start-Sleep -Seconds 3
@@ -205,4 +205,5 @@ $oppsummering
         Write-Host "[$tid] RAID #$raidNr logged to $rapportFil" -ForegroundColor Magenta
         return
     }
+
 }
