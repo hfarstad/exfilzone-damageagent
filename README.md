@@ -3,6 +3,18 @@
 
 A PowerShell tool for monitoring your Contractors Showdown game log in real time, parsing of the damage events, and for generating per-raid reports. Built to detect anomalies ingame and suspicious damage patterns,to give a clear picture of what happened each raid.
 
+**## First time setup
+
+Run this once in PowerShell as administrator:
+```powershell
+Unblock-File -Path .\exfildamageagent.ps1
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+#Then run the script normally by launching by doubleclicking the .ps1 file,right clickING the script.ps1 and press run in powershell..<img width="366" height="201" alt="image" src="https://github.com/user-attachments/assets/251de8c8-520d-41f8-9cb8-b8cfc713c54c" />
+
+
+#downloaded scripts may also need to be "unblocked". find the downloaded script file and right clicking it → Properties → Unblock → OK before running.**
 What it does
 
 - Monitors the ExfilZone log file live as you play
