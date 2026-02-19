@@ -2,6 +2,7 @@
 
 #If you get a permissions error when launching the damageagent, run this once in PowerShell as administrator:
 ```powershell
+Unblock-File -Path .\exfildamageagent.ps1
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
