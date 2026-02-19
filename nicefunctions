@@ -1,0 +1,31 @@
+```powershell
+optional nice functions for the damageagent
+Howto : 
+add this section to your powershell profile like this by launching powershell as administrator
+launch as admin by right clicking powershell and pressing start as administrator.
+then type
+notepad.exe $profile  
+
+#then in powershell add these linesbelow, to the bottom of your powershellprofile
+
+function lastraid {
+    # get the most recent raid report and display it
+    $filer = Get-ChildItem "$env:USERPROFILE\Documents\DamageAgent\*.log" | Sort-Object LastWriteTime -Descending
+    if (-not $filer) { Write-Host "No reports found" -ForegroundColor Red; return }
+    $siste = $filer[0]
+    Write-Host "Latest raid: $($siste.Name)" -ForegroundColor Cyan
+    Get-Content $siste.FullName
+}
+
+function listraids {
+    # list all raid reports and pick one by number to read
+    $filer = Get-ChildItem "$env:USERPROFILE\Documents\DamageAgent\*.log" | Sort-Object LastWriteTime -Descending
+    if (-not $filer) { Write-Host "No reports found" -ForegroundColor Red; return }
+    for ($i=0; $i -lt $filer.Count; $i++) {
+        Write-Host "[$i] $($filer[$i].Name)"
+    }
+    $valg = Read-Host "`nPick a number"
+    if ($valg -match '^\d+$' -and [int]$valg -lt $filer.Count) {
+        Get-Content $filer[[int]$valg].FullName
+    }
+}
