@@ -6,7 +6,7 @@ A PowerShell tool for monitoring your Contractors Showdown game log in real time
 
 - Monitors the ExfilZone log file live as you play
 - Real-time OBS damage overlay (damage.txt)
-- <img width="873" height="498" alt="image" src="https://github.com/user-attachments/assets/9c49b2cf-d022-4873-94d7-7db528108f3f" />
+- <img width="500" height="49300" alt="image" src="https://github.com/user-attachments/assets/9c49b2cf-d022-4873-94d7-7db528108f3f" />
 
 - Records your loadout, map, raid duration, and killer name
 - Filters out micro-damage (bleed ticks, passive drain) for cleaner reports
