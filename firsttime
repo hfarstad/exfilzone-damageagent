@@ -1,0 +1,10 @@
+## First time setup
+
+#If you get a permissions error, run this once in PowerShell as administrator:
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+#Then run the script normally by launching by doubleclicking the .ps1 file,right clickING the script.ps1 and press run in powershell..
+
+#downloaded scripts may also need to be "unblocked". find the downloaded script file and right clicking it → Properties → Unblock → OK before running.
