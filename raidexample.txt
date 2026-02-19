@@ -1,0 +1,41 @@
+=== RAID #1 ===
+Map:           Resort
+Start time:    2026-02-19 00:07:29
+End time:      2026-02-19 00:32:15
+Start weapon:  AK74M
+Final weapon:  M4A1
+Secondary:     MP9
+Vest:          S.D. Protector Full Body Armor Black
+Helmet:        RYS T
+Killed by:    suspiciousplayer007
+Total damage:  438.572 HP
+
+--- Damage events ---
+2026-02-19 00:10:20 - 42.3 HP (Realistic damage)
+2026-02-19 00:16:52 - 3.904 HP (Realistic damage)
+2026-02-19 00:21:39 - 47.975 HP (Realistic damage)
+2026-02-19 00:21:40 - 37.099 HP (Realistic damage)
+2026-02-19 00:21:40 - 25.48 HP (Realistic damage)
+2026-02-19 00:21:40 - 2.968 HP (Realistic damage)
+2026-02-19 00:21:40 - 27.099 HP (Realistic damage)
+2026-02-19 00:21:41 - 2.374 HP (Realistic damage)
+2026-02-19 00:21:41 - 37.099 HP (Realistic damage)
+2026-02-19 00:21:41 - 2.007 HP (Realistic damage)
+2026-02-19 00:21:42 - 2.968 HP (Realistic damage)
+2026-02-19 00:21:42 - 2.968 HP (Realistic damage)
+2026-02-19 00:21:42 - 2.968 HP (Realistic damage)
+2026-02-19 00:21:42 - 21.267 HP (Realistic damage)
+2026-02-19 00:21:42 - 41.707 HP (Realistic damage)
+2026-02-19 00:21:42 - 52.998 HP (Realistic damage)
+2026-02-19 00:21:50 - 11.128 HP (Realistic damage)
+2026-02-19 00:32:14 - 74.263 HP (Realistic damage)
+
+--- Suspicious hits ---
+
+
+Total micro-damage (bleed/passive drain): 19.96 HP
+
+--- Summary ---
+Kit OK - no suspicious hits
+
+=== RAID END ===
