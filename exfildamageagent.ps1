@@ -16,11 +16,11 @@ $loggFil        = "${env:ProgramFiles(x86)}\Steam\steamapps\common\Contractors S
 $overlayFil     = Join-Path $outputDir "damage.txt"
 $mistenkeligFil = Join-Path $outputDir "suspicious-damage.log"
 
-# === Damage thresholds ===
+# Damage thresholds 
 $maks    = 80    # max realistic single hit — flag as "Possible mod" above this
 $modMaks = 150   # upper bound before flagging "Exploit suspected"
 
-# === Variables===
+# Variables in norwenglish
 $totalSkade        = 0
 $mikroSkadeTotal   = 0
 $vaapen            = "Unknown"
@@ -207,4 +207,5 @@ $oppsummering
     }
 
 }
+
 
