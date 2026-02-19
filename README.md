@@ -1,4 +1,5 @@
 # DamageAgent
+#My first passion project in powershell to put public! hooray!
 
 A PowerShell tool for monitoring your Contractors Showdown game log in real time, parsing of the damage events, and for generating per-raid reports. Built to detect anomalies ingame and suspicious damage patterns,to give a clear picture of what happened each raid.
 
