@@ -12,7 +12,7 @@ A PowerShell tool for monitoring your Contractors Showdown game log in real time
 
 - Records your loadout, map, raid duration, and killer name
 - Filters out micro-damage (bleed ticks, passive drain) for cleaner reports
-- Writes a per-raid report file — useful for reviewing raids or reporting cheaters
+- Writes a per-raid report file, useful for reviewing raids or reporting cheaters
 
 ## what it should do when devs add outgoing shot/damage logging
 The damage thresholds system is already built. Once the log registers damage you deal, the agent will be able to cross-reference hit values against weapon and ammo profiles to flag whether incoming damage was realistically possible — making cheat detection much better
